@@ -1,7 +1,7 @@
 """
 COMP 163 - Project 2: Character Abilities Showcase
-Name: Kelvin Quaicoe
-Date: 11/7/2025
+Name: [Your Name Here]
+Date: [Date]
 
 AI Usage: [Document any AI assistance used]
 Example: AI helped with inheritance structure and method overriding concepts
@@ -173,7 +173,7 @@ class Warrior(Player):
         """
         # TODO: Implement power strike
         # Should do significantly more damage than regular attack
-        damage = (self.strength + 5) * 3
+        damage = (self.strength + 5) * 2
         target.take_damage(damage)
         print(f"{self.name} uses Power Strike on {target.name} for {damage} damage!")
         return damage
@@ -211,7 +211,7 @@ class Mage(Player):
         """
         # TODO: Implement fireball spell
         # Should do magic-based damage with bonus
-        damage = self.magic * 3
+        damage = self.magic * 2
         target.take_damage(damage)
         print(f"{self.name} casts Fireball on {target.name} for {damage} damage!")
         return damage
@@ -364,3 +364,4 @@ if __name__ == "__main__":
     dagger.display_info()   
     
     print("\n✅ Testing complete!")
+
