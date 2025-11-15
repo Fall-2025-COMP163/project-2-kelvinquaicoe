@@ -145,3 +145,87 @@ Feel free to add your own creative touches for bonus points:
 - Additional character classes beyond the three required
 - More weapon types with different properties
 - Enhanced special abilities with unique effects
+
+
+ 
+## Read Me
+Created several character classes ( Warrior, Mage, and Rogue) each with unique stats and abilities.
+The project includes:
+
+A base Character class
+
+A Player class that extends Character
+
+Subclass-specific attacks (method overriding)
+
+Special abilities for each class
+
+A Weapon class showing composition (“has-a” relationship)
+
+A SimpleBattle system to run battles between characters
+
+
+##Character (Base Class)
+
+Attributes: name, health, strength, magic
+
+Methods: attack(), take_damage(), display_stats()
+
+Player (Derived Class)
+
+Adds: character_class, level, experience
+
+Overrides: display_stats()
+
+
+##Warrior
+
+Strong physical fighter
+
+Overrides attack()
+
+Special ability: power_strike()
+
+
+##Mage
+
+Magic-focused spellcaster
+
+Overrides attack() to use magic
+
+Special ability: fireball()
+
+
+##Rogue
+
+Agile fighter with critical-hit chance
+
+Overrides attack() with crit mechanic
+
+Special ability: sneak_attack()
+
+
+##Weapon (Composition)
+
+Demonstrates a has-a relationship
+
+Characters may have weapons that add bonuses
+
+
+##SimpleBattle (Provided)
+
+Runs a simple one-round battle between two characters
+
+Shows inheritance and polymorphism in action
+
+Not modified as required
+
+
+##How to Run the Program
+Save the file as project2.py
+
+Run: python project2.py
+
+
+##AI Usage 
+AI assistance was used throughout the development of this project to support debugging and code refinement. Specifically, AI helped identify and correct syntax-related issues such as misspelled variable and method names, missing parentheses, and incorrect indentation. AI also explained and clarified the purpose and behavior of super() within class inheritance, ensuring the correct invocation of parent class constructors and methods. Additionally, AI identified that the random module must be imported before using functions like randint, which resolved errors related to generating random values. All AI assistance was used strictly for learning, debugging, and improving code readability.
